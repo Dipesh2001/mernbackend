@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purple Buzz</title>
+     {{>links}}
+    {{!-- <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/boxicon.min.css" /> -->
+    <link rel="stylesheet" href="css/materialize.min.css"> --}}
+</head>
+
+<body>
+
+    {{>navbar}}
+    <div class="login mt-5 py-5 bg-light d-flex justify-content-center align-items-center flex-column">
+        <div class="box">
+            <h1>login now</h1>
+            <form action="/login" method="POST">
+                <div>
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" id="pwd" name="password">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    {{!-- <script src="js/abc.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materialize.min.js"></script> --}}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            // var instances = M.Sidenav.init(elems, options);
+        });
+        // Or with jQuery
+        let nav = document.querySelector('.bar');
+        let rnav = document.querySelector('.nav');
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                // alert("hello");
+                // console.log("now");
+                rnav.style.background = "#3949ab";
+                nav.style.padding = "0rem";
+                // console.log("purple done")
+                // console.log()
+            } else {
+                rnav.style.background = "transparent";
+                nav.style.padding = ".5rem";
+            }
+            // if(document.scrollingElement.scrollHeight == 0){
+            //   nav.style.backgroundColor = "transparent";
+            //   console.log("not done")
+            // }
+        });
+    </script>
+</body>
+
+</html>

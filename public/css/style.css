@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+.prim {
+  color: #6266ea; }
+
+.title h5 {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 2.4rem; }
+
+.cont {
+  width: 75%; }
+
+.nav {
+  z-index: 200;
+  height: auto;
+  width: 100%;
+  background: transparent;
+  box-shadow: 2px 2px 7px lightgrey;
+  position: fixed; }
+  .nav .bar {
+    transition: padding .3s linear; }
+  .nav .brand-logo {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none; }
+  .nav .cont {
+    padding: 0 2rem; }
+  .nav ul li a {
+    text-decoration: none; }
+    .nav ul li a:hover {
+      background-color: transparent;
+      color: lightgrey; }
+  .nav .btn {
+    padding: 0rem 2rem;
+    font-size: .7rem; }
+
+.outer {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7)), url("file:///F:/myworks/material%20landing/img/panorama-3094696_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.header {
+  height: auto;
+  width: 100%;
+  position: relative; }
+  .header div {
+    height: auto;
+    width: 100%; }
+    .header div .buttons .bt2 {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #fff; }
+    .header div .buttons .bt1 {
+      background: #fff;
+      color: black;
+      border: 1px solid transparent; }
+    .header div .buttons .btn {
+      padding: 0rem 2rem;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 500; }
+
+.cards {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  background: red; }
+  .cards .box1 {
+    background: #7e57c2; }
+  .cards .box2 {
+    background: #ab47bc; }
+  .cards .box3 {
+    background: #26a69a; }
+  .cards .box4 {
+    background: #29b6f6; }
+  .cards div {
+    text-align: center;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    align-items: center;
+    flex-direction: column; }
+    .cards div p {
+      width: 75%;
+      font-size: 1rem;
+      font-weight: 400; }
+
+.why {
+  height: auto;
+  width: 100%;
+  background: whitesomke; }
+
+.projects {
+  height: auto;
+  width: 100%;
+  background: white; }
+  .projects div img {
+    height: 75%;
+    width: 75%; }
+  .projects div .data {
+    margin: 2rem 0; }
+    .projects div .data p {
+      text-align: left;
+      line-height: 2rem; }
+
+.price {
+  height: auto;
+  width: 100%;
+  background: #3949ab;
+  padding: 2rem 0; }
+  .price .pcards {
+    width: 90%; }
+    .price .pcards div {
+      background-image: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7)), url("file:///F:/myworks/material%20landing/img/panorama-3094696_1920.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+      .price .pcards div .pcard {
+        width: 100%;
+        margin: 1rem auto;
+        height: 70vh; }
+        .price .pcards div .pcard button {
+          padding: 1rem 1.5rem;
+          background: transparent;
+          border: 1px solid white;
+          color: white; }
+
+          .myform{
+            height:100vh;
+            width:100%;
+          }          
+.login{
+  height:100vh;
+  width:100%;
+  background:red;
+}
+.box{
+  height:400px;
+  width:400px;
+  background:whitesmoke;
+}
+@media (max-width: 600px) {
+  .title {
+    width: 100% !important;
+    font-size: .8rem; }
+
+  .cont {
+    width: 100% !important; }
+
+  .projects div img {
+    height: 100%;
+    width: 100%; }
+  .projects div .data h5 {
+    padding-left: 2rem; }
+  .projects div .data p {
+    padding-left: 1.5rem;
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

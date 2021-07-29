@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html{
+    font-size:62.5%;
+}
+$prim:#6266ea;
+.prim{
+	color:$prim;
+}
+.title{
+	h5{width:75%;margin:0 auto; font-size:1.3rem;line-height: 2.4rem;}
+}
+.cont{
+	width:75%;
+}
+.nav{
+	z-index:200;
+	height:auto;
+	width: 100%;
+	background: transparent;
+	box-shadow: 2px 2px 7px lightgrey;
+	.bar{
+		transition:padding .3s linear;
+	}
+	.brand-logo{
+		font-size: 1.3rem;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	.cont{
+		padding: 0 2rem;
+	}
+	position: fixed;
+	ul li a{
+		text-decoration:none;
+		&:hover{
+			background-color: transparent;
+			color:lightgrey;
+		}
+	}
+	.btn{
+		padding:0rem 2rem;
+		font-size:.7rem;
+	}
+}
+.outer{
+	height:100vh;
+	width:100%;
+	background-image:linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7)),url('file:///F:/myworks/material%20landing/img/panorama-3094696_1920.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.header{
+
+
+	//header
+	height:auto;
+	width:100%;
+	// position: absolute;
+	position: relative;
+	// bottom:100%;
+	// background-image:linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7)),url('file:///F:/myworks/material%20landing/img/panorama-3094696_1920.jpg');
+	// background-repeat: no-repeat;
+	// background-size: 100% 100%;
+	div{
+		height:auto;
+		width:100%;
+		 .buttons{
+			.bt2{background:transparent;color:#fff;border:1px solid #fff;}
+			.bt1{background:#fff;color:black;border:1px solid transparent;}
+			.btn{padding:0rem 2rem;text-transform:uppercase;font-size:1rem;font-weight:500;}
+		}
+	}
+}
+.cards{
+	position: relative;
+	// top:100%;
+	height:30%;width:100%;background:red;
+	.box1{background:#7e57c2;}
+	.box2{background:#ab47bc;}
+	.box3{background:#26a69a;}
+	.box4{background:#29b6f6;}
+	div{
+		text-align:center;
+		height:250px;
+		display:flex;
+		justify-content: space-around;
+		color:#fff;
+		align-items:center;
+		flex-direction:column;
+		p{width:75%;font-size:1rem;font-weight:400;}
+	}
+}
+.why{
+	height:auto;
+	width:100%;
+	background:whitesomke;
+	// position:relative;
+}
+.projects{
+	height:auto;
+	width:100%;
+	background:white;
+	div img{
+		height: 75%;
+		width: 75%;
+	}
+	div .data{
+		p{
+			text-align:left;
+			line-height:2rem;
+		}
+		margin:2rem 0;
+	}
+}
+.price{
+	height:auto;
+	width:100%;
+	background:#3949ab;
+	padding:2rem 0;
+	.pcards{
+		width:90%;
+		// margin:0 auto;
+		div { 
+			.pcard{
+			width:100%;
+			margin:1rem auto;
+			height:70vh;
+			button{
+				padding:1rem 1.5rem;
+				background:transparent;
+				border:1px solid white;
+				color:white;
+				// margin:2rem 0;
+				// &:hover{
+				// 	background:white;
+				// 	color:black;
+				// 	border:1px solid transparent;
+				// }
+			}
+		}
+			background-image:linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7)),url('file:///F:/myworks/material%20landing/img/panorama-3094696_1920.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+}
+@media (max-width:600px) {
+	.title{
+		width:100% !important;
+		font-size:.8rem;
+		// color:red !important;
+	}
+	.cont{
+		width:100% !important;
+	}
+	.projects{
+		div img{
+			height:100%;
+			width: 100%;
+		}
+		div .data{
+			h5{padding-left:2rem;}
+			p{
+				padding-left: 1.5rem;
+				width:100%;
+			}
+		}
+	}
+}

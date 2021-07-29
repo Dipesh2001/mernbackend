@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purple Buzz</title>
+     {{>links}}
+    {{!-- <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/boxicon.min.css" /> -->
+    <link rel="stylesheet" href="css/materialize.min.css"> --}}
+</head>
+
+<body>
+
+    {{>navbar}}
+    <div class="row myform container bg-light mt-5 py-5">
+        <div class="col-3 text-danger text-center d-flex justify-content-center align-items-center
+  flex-column">
+            <h5>this is the form to fill here</h5>
+        </div>
+        <div class="col-9">
+            <form action="/register" method="POST">
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label>name:</label>
+                        <input type="text" class="form-control" placeholder="Enter username" name="uname">
+                    </div>
+
+                     <div class="form-group col-6">
+                        <label>phone:</label>
+                        <input type="text" class="form-control" placeholder="Enter phone" name="phone">
+                    </div>
+
+                    <div class="form-group col-6">
+                        <label>email:</label>
+                        <input type="email" class="form-control" placeholder="Enter email" name="email">
+                    </div>
+
+                    <div class="form-group col-6">
+                        <label>age:</label>
+                        <input type="text" class="form-control" placeholder="Enter age" name="age">
+                    </div>
+
+                    <div class="form-group col-6">
+                        <label>password:</label>
+                        <input type="password" class="form-control" placeholder="Enter password" name="password">
+                    </div>
+
+                    <div class="form-group col-6">
+                        <label>cpassword:</label>
+                        <input type="password" class="form-control" placeholder="Enter cpassword" name="cpassword">
+                    </div>
+                </div>
+                <input type="submit" value="submit" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+    {{!-- <script src="js/abc.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materialize.min.js"></script> --}}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            // var instances = M.Sidenav.init(elems, options);
+        });
+        // Or with jQuery
+        let nav = document.querySelector('.bar');
+        let rnav = document.querySelector('.nav');
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                // alert("hello");
+                // console.log("now");
+                rnav.style.background = "#3949ab";
+                nav.style.padding = "0rem";
+                // console.log("purple done")
+                // console.log()
+            } else {
+                rnav.style.background = "transparent";
+                nav.style.padding = ".5rem";
+            }
+            // if(document.scrollingElement.scrollHeight == 0){
+            //   nav.style.backgroundColor = "transparent";
+            //   console.log("not done")
+            // }
+        });
+    </script>
+</body>
+
+</html>
